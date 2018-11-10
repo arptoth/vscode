@@ -32,3 +32,17 @@ df = h2o.import_file(data_path)
 df.head()
 
 #%%
+df.describe()
+
+#%%
+y = "went_on_backorder"
+x = df.columns
+x.remove(y)
+x.remove("sku")
+
+#%%
+aml = H2OAutoML(max_models = 5, seed = 1)
+aml.train(x = x, y = y, training_frame = df)
+
+
+#%
