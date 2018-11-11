@@ -8,13 +8,6 @@ import pandas as pd
 data=pd.read_csv("diabetes.csv")
 
 #%%
-data=pd.DataFrame(data)
-
-
-#%%
-data.columns
-
-#%%
 
 # Load the H2O library and start up the H2O cluter locally on your machine
 #%%
