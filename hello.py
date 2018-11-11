@@ -46,3 +46,6 @@ aml.train(x = x, y = y, training_frame = df)
 
 
 #%
+aml.leaderboard
+
+#%%
